@@ -14,4 +14,3 @@ ReactJS + Google Maps combination to make a map of desired travel sites.
 * Multiple Site Themes
 * Overall Bucket List
 * Bucket List per location
-
