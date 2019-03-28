@@ -4,7 +4,9 @@
   "description": "bucket list for travel using google maps",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,25 @@
   "bugs": {
     "url": "https://github.com/chrisgbradley/travel-map/issues"
   },
-  "homepage": "https://github.com/chrisgbradley/travel-map#readme"
+  "homepage": "https://github.com/chrisgbradley/travel-map#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "google-maps-react": "^2.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
