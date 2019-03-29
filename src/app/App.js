@@ -1,12 +1,11 @@
 import React, { Component } from "react";
+import GMapContainer from "../modules/googleMap/GoogleMap";
 
 class App extends Component {
-	state = {};
-
-	render () {
+	render() {
 		return (
 			<div>
-				hello
+				<GMapContainer/>
 			</div>
 		);
 	}

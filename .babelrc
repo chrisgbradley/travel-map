@@ -8,5 +8,15 @@
       }
     ],
     "@babel/preset-react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "test": "./test",
+        "underscore": "lodash"
+      }
+    }],
+    "@babel/plugin-syntax-dynamic-import"
   ]
 }
