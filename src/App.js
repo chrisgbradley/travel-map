@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Map from "../modules/mapComponent/MapComponent";
+import Dashboard from "components/Dashboard/Dashboard";
 
 class App extends Component {
 	render() {
 		return (
-			<Map/>
+			<Dashboard/>
 		);
 	}
 }

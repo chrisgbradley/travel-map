@@ -1,11 +1,11 @@
 # Travel Bucket List Map
 ## What is this?
-ReactJS + Google Maps combination to make a mapComponent of desired travel sites.
+ReactJS + Google Maps combination to make a Map of desired travel sites.
 
 ## Goals
 ### Basic Functionality
 * Add/Remove location function
-* Styled mapComponent
+* Styled Map
 * Color coded markers (visited, planned visit, want to visit)
 * Authentication
 

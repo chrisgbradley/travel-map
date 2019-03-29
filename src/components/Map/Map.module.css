@@ -1,0 +1,12 @@
+.map {
+	flex: 1 1 0;
+	box-sizing: border-box;
+}
+
+.map__loader {
+	height: 100%;
+}
+
+.map__map-elem {
+	height: 100%;
+}

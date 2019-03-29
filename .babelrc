@@ -17,6 +17,7 @@
         "underscore": "lodash"
       }
     }],
-    "@babel/plugin-syntax-dynamic-import"
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
   ]
 }
