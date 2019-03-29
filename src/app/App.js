@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import GMapContainer from "../modules/googleMap/GoogleMap";
+import Map from "../modules/mapComponent/MapComponent";
 
 class App extends Component {
 	render() {
 		return (
-			<GMapContainer/>
+			<Map/>
 		);
 	}
 }

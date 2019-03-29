@@ -4,7 +4,7 @@
   "description": "bucket list for travel using google maps",
   "main": "server.js",
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "rimraf dist .cache",
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html"
   },
@@ -30,9 +30,11 @@
     "style-loader": "^0.23.1"
   },
   "dependencies": {
-    "google-maps-react": "^2.0.2",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^5.2.0",
+    "recompose": "^0.30.0"
   }
 }
