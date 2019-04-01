@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Helmet from "react-helmet";
 import { compose, withProps } from "recompose";
 import {
 	withScriptjs,
@@ -11,14 +10,14 @@ import { InfoBox} from "react-google-maps/lib/components/addons/InfoBox";
 import {__GAPI_KEY} from "../../../.config.private";
 import styles from "./Map.module.css";
 
-const MAPS_URI = `https://maps.googleapis.com/maps/api/js?v=3.36&key=${__GAPI_KEY}&callback=initMap`;
+const MAPS_URI = `https://maps.googleapis.com/maps/api/js?v=3.36&key=${__GAPI_KEY}`;
 
 const MapWrapper = compose(
 	withProps({
 		googleMapURL: MAPS_URI,
-		containerElement: <div className="map" />,
-		loadingElement: <div className="map__loader" />,
-		mapElement: <div className="map__map-elem" />
+		containerElement: <div className={styles.map} />,
+		loadingElement: <div className={styles.map__loader} />,
+		mapElement: <div className={styles["map__map-elem"]} />
 	}),
 	withScriptjs,
 	withGoogleMap
@@ -34,20 +33,12 @@ const MapWrapper = compose(
 	);
 
 
-class Map extends React.PureComponent {
-	state = { };
-
-	render() {
-		return (
-			<Fragment>
-				{/*hacks away an error with google maps initMap() by globalizing it*/}
-				<Helmet script={[{type: 'text/javascript', innerHTML: 'initMap = function () {}'}]} />
-				<MapWrapper
-				/>
-			</Fragment>
-		)
-	}
-}
+const Map = function() {
+	return (
+		<MapWrapper
+		/>
+	)
+};
 
 
 export default Map;
