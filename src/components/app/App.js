@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
 import "normalize.css";
+import "./app.css";
 
 import Dashboard from "../dashboard";
+import Header from "../header";
 
 setDefaultBreakpoints([
 	{ xs: 0 },
@@ -16,10 +18,10 @@ setDefaultBreakpoints([
 const App = function () {
 	return (
 		<BreakpointProvider>
-			<div>
-				<h1>hello, world.</h1>
+			<Fragment>
+				<Header/>
 				<Dashboard/>
-			</div>
+			</Fragment>
 		</BreakpointProvider>
 	)
 };

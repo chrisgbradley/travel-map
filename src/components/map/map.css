@@ -1,13 +1,14 @@
 .map__container {
 	height: 100%;
+	flex: 0 1 100%;
 	position: relative;
 	overflow: hidden;
 }
 
 .map__elem {
-
+	height: 100%;
 }
 
 .map__loader {
-
+	height: 100%;
 }

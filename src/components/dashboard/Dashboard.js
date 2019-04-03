@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import "./dashboard.css";
 import Map from "../map";
 
 const Dashboard = function () {
 	return (
-		<div>
-			dashboard
+		<div className="dashboard">
 			<Map/>
 		</div>
 	);
