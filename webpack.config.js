@@ -25,13 +25,19 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
+				exclude: /node_modules/,
 				include: path.resolve(__dirname, 'src'),
-				loader: 'babel-loader'
+				loader: 'babel-loader',
+				query: {
+					"presets": [
+						"@babel/preset-env",
+						"@babel/preset-react"
+					]
+				}
 			}
 		]
 	},
 	plugins: [
-		new CleanWebpackPlugin(),
 		new webpack.HotModuleReplacementPlugin()
 	]
 };
